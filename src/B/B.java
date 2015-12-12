@@ -18,7 +18,7 @@ import java.util.Random;
  * @author Lauri
  */
 public class B {
-
+static int seed = 0;
     /**
      * @param args the command line arguments
      */
@@ -34,8 +34,12 @@ public class B {
                 System.out.println("Client connected!");
                 String[] values = in.readLine().split("%");
                 String solution = solveModulo(values[0], values[1]);
+                System.out.println("Seed was" + seed);
                 out.write(solution);
                 out.flush();
+                in.close();
+                out.close();
+                clientSocket.close();
             }
     }
 
@@ -45,10 +49,11 @@ public class B {
        int solution;
        Random rn = new Random();
        int seed = rn.nextInt(10) + 1;
+       B.seed = seed;
        if (seed == 1) {
            return "Error!";
                    }
-       else if (seed == 1) {
+       else if (seed == 2) {
           solution = modulo(dend, sor) + 1;
        }
        else {
