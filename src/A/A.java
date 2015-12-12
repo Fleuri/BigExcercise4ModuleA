@@ -94,8 +94,12 @@ public class A {
     }
 
     private static boolean CorrectSolutions(String[] solutions) {
+        if (solutions[0].equals("Error!")) {
+            System.out.println("Critical Error!");
+            System.exit(1);
+        }
         for (int i = 1; i < solutions.length; i++) {
-            if (!solutions[0].equals(solutions[i]) ) {
+            if (!solutions[0].equals(solutions[i])) {
                 if (solutions[i].equals("Error!")) {
                     System.out.println("Critical Error!");
                     System.exit(1);
