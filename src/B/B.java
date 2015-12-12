@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bigexcercise4moduleb;
+package B;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.util.Random;
  *
  * @author Lauri
  */
-public class BigExcercise4ModuleB {
+public class B {
 
     /**
      * @param args the command line arguments

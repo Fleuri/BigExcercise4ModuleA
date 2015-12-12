@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bigexcercise4modulea;
+package A;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,7 +21,7 @@ import java.util.logging.Logger;
  *
  * @author Lauri
  */
-public class BigExcercise4ModuleA {
+public class A {
 
     /**
      * @param args the command line arguments
@@ -59,7 +59,7 @@ public class BigExcercise4ModuleA {
             System.out.println("No configuration file provided. Aborting.");
             System.exit(1);
         } catch (IOException ex) {
-            Logger.getLogger(BigExcercise4ModuleA.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(A.class.getName()).log(Level.SEVERE, null, ex);
         }
         return tmpAddresses;
     }
@@ -79,7 +79,7 @@ public class BigExcercise4ModuleA {
                 socket.close();
                 
             } catch (IOException ex) {
-                Logger.getLogger(BigExcercise4ModuleA.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(A.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return solutions;
